@@ -9,13 +9,13 @@ function verificarLados() {
   var ladoB = Number(inLadoB.value);
   var ladoC = Number(inLadoC.value);
 
-  if (ladoA == "" || ladoB == "" || ladoC == "" || isNaN(ladoA, ladoB, ladoC)) {
+  if ((ladoA == "" || ladoB == "" || ladoC == "") || isNaN(ladoA, ladoB, ladoC)) {
     alert("Digite um valor válido e preencha todos os campos!");
     inLadoA.focus();
     return;
   }
 
-  if (ladoA > ladoB + ladoC || ladoB > ladoA + ladoC || ladoC > ladoA + ladoB) {
+  if ((ladoA > ladoB + ladoC) || (ladoB > ladoA + ladoC) || (ladoC > ladoA + ladoB)) {
     outTitulo.textContent = "Lados não podem formar um triangulo";
     inLadoA.focus();
   } else if (ladoA == ladoB && ladoA == ladoC) {
