@@ -18,7 +18,7 @@ function listarNumeros() {
 
   // cria um for decrescente
   for (var i = numero - 1; i > 0; i--) {
-      resposta = resposta + ', ' + i;
+      resposta = resposta                          + ', ' + i;
     }
     resposta = resposta + '.';
 
