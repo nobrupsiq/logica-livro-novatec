@@ -21,3 +21,5 @@ for(var i = 4; i <= num; i = i + 2) {
 
 // exibe lista dos números pares
 alert(pares);
+
+//teste
