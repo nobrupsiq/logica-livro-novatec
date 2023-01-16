@@ -1,0 +1,15 @@
+.oculta {
+  display: none;
+}
+
+.exibe {
+  display: block;
+}
+
+h1 {
+  border-bottom-style: inset;
+}
+
+pre {
+  font-size: 1.2em;
+}
