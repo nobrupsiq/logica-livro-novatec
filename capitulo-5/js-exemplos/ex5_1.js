@@ -43,7 +43,7 @@ function urgenciaGlobal() {
       return;
     }
 
-    pacientes.unshift(nome);
+    pacientes.unshift(nome); // adiciona o nome ao inicio da lista
 
     let lista = "";
 
@@ -67,7 +67,7 @@ function atenderGlobal() {
       return;
     }
 
-    let atender = pacientes.shift();
+    let atender = pacientes.shift(); // remove o primeiro nome do vetor
 
     outAtendimento.textContent = atender;
     let lista = "";
