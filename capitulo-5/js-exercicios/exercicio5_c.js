@@ -51,6 +51,7 @@ function aprovados() {
   if (alunos.length === 0) {
     alert('Não existem alunos na lista!');
     inCandidato.focus();
+    return;
   }
 
   let aprovacao = Number(prompt('Número de acertos para aprovação?'));
