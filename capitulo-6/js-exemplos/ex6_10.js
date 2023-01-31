@@ -29,9 +29,10 @@ function calcularMultaJuros() {
 
   // A data vem no formato aaaa-mm-dd
   let partes = dataVenc.split('-');
-  vencto.setDate(Number(partes[2])); // Mês
-  vencto.setMonth(Number(partes[1]) - 1); // Ano
-  vencto.setFullYear(Number(partes[0])); // Dia
+  vencto.setFullYear(Number(partes[0])); // Ano
+  vencto.setMonth(Number(partes[1]) - 1); // Mês
+  vencto.setDate(Number(partes[2])); // Dia
+  console.log(partes);
 
   // calcula a diferença de dias entre as datas (em milesegundos)
   let atraso = hoje - vencto;
