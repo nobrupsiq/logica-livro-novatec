@@ -19,6 +19,7 @@ function criptografar() {
   for (let i = 1; i < tamanho; i = i + 2) {
     resposta += mensagem.charAt(i);
   }
+
   // laço posição par
   for (let i = 0; i < tamanho; i = i + 2) {
     resposta += mensagem.charAt(i);
@@ -31,6 +32,28 @@ btCriptografar.addEventListener('click', criptografar);
 function decriptografar() {
   let mensagem = inMensagem.value;
 
-  outMensagem.textContent = mensagem;
+  if (mensagem == '') {
+    alert('Preencha o campo corretamente!');
+    inMensagem.focus();
+    return;
+  }
+
+  let tamanho = mensagem.length;
+  let metade = Math.floor(tamanho / 2);
+  var resposta = '';
+
+  if (tamanho % 2 == 0) {
+    for (var i = metade; i < tamanho; i++) {
+      resposta += mensagem.charAt(i);
+      resposta += mensagem.charAt(i - metade);
+    }
+  } else {
+    for (var i = metade; i < tamanho - 1; i++) {
+      resposta += mensagem.charAt(i);
+      resposta += mensagem.charAt(i - metade);
+    }
+    resposta += mensagem.charAt(i);
+  }
+  outMensagem.textContent = resposta;
 }
 btDecriptografar.addEventListener('click', decriptografar);
