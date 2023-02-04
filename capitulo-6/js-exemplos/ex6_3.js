@@ -7,6 +7,7 @@ let tamanho = palavra.length; // obtém o tamanho
 // inverso inicia com a última letra da palavra em caixa alta
 // aqui ele retorna a ultima letra na variavel inverso
 let inverso = palavra.charAt(tamanho - 1).toUpperCase();
+console.log(inverso);
 
 // for decrescente percorre as demais letras e...
 // -2 porque a variavel inverso ja retorna a ultima, então o loop deve ser iniciado da penultima letra e vai decrescendo.

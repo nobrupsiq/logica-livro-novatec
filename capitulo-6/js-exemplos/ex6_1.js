@@ -1,13 +1,11 @@
-var anuncio = prompt('Anúncio: '); // Lê o anuncio
-var tam = anuncio.length; // obtém o tamanho
-var numPalavras = 0; // inicializa o contador
+let anuncio = prompt('Anuncio: ');
+let tamanho = anuncio.length;
+let palavrasTamanho = 0;
 
-// Percorre os caracteres do anúncio
-for (let i = 0; i < tam; i++) {
+for (let i = 0; i < tamanho; i++) {
   if (anuncio.charAt(i) == ' ') {
-    numPalavras++; // incrementa contador
+    palavrasTamanho++;
   }
 }
 
-// exibe anuncio e número de palavras ( que é o n° de espaços + 1)
-alert(`Anúncio: ${anuncio} \nN° Palavras: ${numPalavras + 1}`);
+alert(`Anuncio: ${anuncio}\nPalavras: ${palavrasTamanho + 1}`);
