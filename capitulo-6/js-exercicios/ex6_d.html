@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICIO 6.D</title>
+  </head>
+  <body>
+    <pre>
+      Suponha que o prazo para o pagamento de uma infração de trânsito com
+      desconto seja de 90 dias. Elaborar um programa que leia a data de uma
+      infração e o valor da multa. Informe qual a data limite do pagamento com
+      desconto (até 90 dias) e o valor a ser pago até essa data (com 20% de
+      desconto)
+  </pre
+    >
+    <h1>Multa de trânsito</h1>
+
+    <p>
+      Data da Infração:
+      <input type="date" name="data" id="inData" />
+    </p>
+    <p>
+      Valor da Multa R$:
+      <input type="text" id="inMulta" />
+    </p>
+
+    <input type="button" value="Calcular Data Limite e Valor com Desconto" id="btCalcularDesconto" />
+
+    <pre id="outDataDesconto"></pre>
+    <pre id="outValorDesconto"></pre>
+    <script src="./ex6_d.js"></script>
+  </body>
+</html>
